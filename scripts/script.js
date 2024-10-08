@@ -1,9 +1,9 @@
 
 const apiKey = "6e510e0abcdbc6afbcba98a481bdcbef"
-const title = document.querySelector('.title')
-const title2 = document.querySelector('.title2')
-const title3 = document.querySelector('.title3')
-const btn_sub = document.querySelector('.fa fa-search')
+const nomeCidade = document.querySelector('.nomeCidade')
+const temperatura = document.querySelector('.temperatura')
+const descricao = document.querySelector('.descricao')
+const enter = document.querySelector('.search')
 
 
 
@@ -21,9 +21,9 @@ const lerDados = async(cidade) =>{
     console.log(data.name)
     console.log(data.weather[0].description);
 
-    title.innerHTML = data.name
-    title2.innerHTML = data.main.temp
-    title3.innerHTML = data.weather[0].description
+    nomeCidade.innerHTML = data.name
+    temperatura.innerHTML = data.main.temp
+    descricao.innerHTML = data.weather[0].description
     
 }
 
@@ -33,10 +33,13 @@ const submit = () =>{
     console.log(search);
 
     lerDados(search)
-
 }
 
-btn_sub.addEventListener
+enter.addEventListener('keydown', (event)=>{
+if (event.key == 'Enter'){
+    submit()
+}
+});
 
 
 
