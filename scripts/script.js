@@ -41,6 +41,8 @@ if (event.key == 'Enter'){
 }
 });
 
+lerDados('cajamar')
+
 
 
 
