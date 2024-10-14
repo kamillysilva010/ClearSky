@@ -5,6 +5,9 @@ const temperatura = document.querySelector('.temperatura')
 const descricao = document.querySelector('.descricao')
 const enter = document.querySelector('.search')
 const icon = document.querySelector('.icon')
+const informacoesSens = document.querySelector('.informacoes-s')
+const informacoesVent = document.querySelector('.informacoes-v')
+const informacoesHum = document.querySelector('.informacoes-h')
 
 
 
@@ -31,11 +34,19 @@ const lerDados = async(cidade) =>{
     console.log(data.main.temp)
     console.log(data.name)
     console.log(data.weather[0].description);
+    console.log(data.main.feels_like);
+    console.log(data.wind.speed);
+    console.log(data.main.humidity);
+    
 
     nomeCidade.innerHTML = data.name
     temperatura.innerHTML = data.main.temp
+    informacoesSens.innerHTML=`${data.main.feels_like}°C`
+    informacoesVent.innerHTML = `${data.wind.speed}m/s`
+    informacoesHum.innerHTML = `${data.main.humidity}%`
     // descricao.innerHTML = data.weather[0].description
-
+  
+   
     const icons_url = data.weather[0].icon 
     
     icon.src = `https://openweathermap.org/img/wn/${icons_url}.png`
