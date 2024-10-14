@@ -8,6 +8,16 @@ const icon = document.querySelector('.icon')
 
 
 
+// const foreCast = async(cidade) => {
+//     const urlforeCast = `https://api.openweathermap.org/data/2.5/forecast?q=${cidade}&appid=${apiKey}&units=metric&lang=pt_br`
+//     const response2 = await fetch(urlforeCast);
+//     const data2 = await response2.json()
+
+//     console.log(data2);
+    
+// }
+// foreCast()
+
 const lerDados = async(cidade) =>{  
 
     const urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apiKey}&units=metric&lang=pt_br`
@@ -29,9 +39,8 @@ const lerDados = async(cidade) =>{
     const icons_url = data.weather[0].icon 
     
     icon.src = `https://openweathermap.org/img/wn/${icons_url}.png`
-    console.log(icon);
     
-    
+
 }
 
 
@@ -39,7 +48,8 @@ const submit = () =>{
     const search = document.querySelector('#Search').value
     console.log(search);
 
-    lerDados(search)
+    lerDados(search);
+    // foreCast(search);
 }
 
 enter.addEventListener('keydown', (event)=>{
