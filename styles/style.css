@@ -39,12 +39,15 @@
     .sidenav{
         width:4vw;
         height: 95%;
-        background-color: #566569;
+        background-color: #202B3B;
         border-radius:8px;
     }
     .sidebar{
         grid-area: sidebar;
-        background-color: #a76565;
+        background-color: #0B131E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav {
@@ -54,14 +57,16 @@
         justify-content: center;
     }
     .search{
+        color:#C4CAD3;
+        font-size: 1vw;
         margin-top:10px;
         height:20px;
         width:90%;
         border-radius:5px;
-        background-color: #566569;
+        background-color: #202B3B;
     }
     input:focus{
-        border: 2px solid ;
+        border: 1px solid #43464ba4 ;
         outline:none;
     }
     .submit{
@@ -74,10 +79,10 @@
 
     .content-temp {
         grid-area: content-temp;
-        background-color: #0A1319;
+        background-color: #0B131E;
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        justify-content: center;
     }
     .cont_temp {
         display: flex;
@@ -86,9 +91,18 @@
         height: 80%;
         box-sizing: border-box;
         margin-top:2%;
+        margin-left: 2vw;
+   
 
         /* O padding aqui ajuda a garantir que o texto tenha um "espaço" interno */
     }
+    .cont-info-temp{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 95%;
+        height: 100%;
+  }
     .cont-icon{
         width:10vw;
         height: 20vh;
@@ -119,13 +133,13 @@
         display: flex;
         justify-content: center;
         grid-area: content-hours;
-        background-color: #0A1319;
+        background-color:  #0B131E;
     }
     .info{
         display: flex;
         align-items: center;
         flex-direction:column;
-        background-color: #566569;
+        background-color:#202B3B;
         width: 95%;
         height:90%;
         border-radius:10px;
@@ -137,44 +151,56 @@
         width:100%;
         height: 10%;
     }
+
     .info-1{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        width: 100%;
-        height: 10vw;
-        background-color: #662b2b;
-
+        width: 98%;
+        height: 8vw;
+        margin-left: 2%;
+        margin-top: 5.5vh;
     }
     .info-2{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        width: 100%;
-        height: 10vw;
-        background-color: rgb(74, 114, 114);
+        width:98%;
+        height: 8vw;
+        margin-left: 2%;
     }
     .sensacao{
         width: 15vw;
         height: 18vh;
-        background-color: #662b2b;
     }
     .vento{
         width: 15vw;
         height: 18vh;
-        background-color: hsl(0, 64%, 43%);
+        margin-left:10vw;
     }
     .humidade{
         width: 15vw;
         height:18vh;
-        background-color: #a76565;
     }
     .p-div{
+        display: flex;
         width: 100%;
         height: 22%;
-        background-color: red;
     }
-
+    .cont-sidebar{
+        width: 95%;
+        height: 86%;
+        margin-top: 4%;
+        background-color: #202B3B;
+        border-radius: 10px;
+    }
+    input::placeholder{
+        color: #C4CAD3;
+        font-size: 1vw;
+        padding-left:2px;
+        opacity: 0.7;
+    }
+  
  

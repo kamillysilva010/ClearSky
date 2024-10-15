@@ -40,7 +40,7 @@ const lerDados = async(cidade) =>{
     
 
     nomeCidade.innerHTML = data.name
-    temperatura.innerHTML = data.main.temp
+    temperatura.innerHTML = `${data.main.temp}°C`
     informacoesSens.innerHTML=`${data.main.feels_like}°C`
     informacoesVent.innerHTML = `${data.wind.speed}m/s`
     informacoesHum.innerHTML = `${data.main.humidity}%`

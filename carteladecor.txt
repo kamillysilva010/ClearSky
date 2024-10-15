@@ -1,2 +1,3 @@
-Conteudo: #0A1319
-Parte claras: #566569
+Conteudo: 0B131E
+Parte claras: #202B3B
+textos: #C4CAD3

@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClearSky</title>
@@ -19,38 +20,35 @@
                 <div class="logo">
                     <img src="./imgs/logo.png" style="width: 4vw; height: 8.5vh;">
                 </div>
-                <i class="fa fa-cloud" style="margin-top:5vh; margin-left:0.9vw;"></i>
-                <p class="cloud-desc" style="font-size: 2vh; text-align: center;">Weather</p>
+                <i class="fa fa-cloud" style="margin-top:5vh; margin-left:0.9vw;color:#C4CAD3"></i>
+                <p class="cloud-desc" style="font-size: 2vh; text-align: center; color:#C4CAD3">Weather</p>
             </div> <!--sidenav-->
         </div> <!--sidenav-container-->
          
 
         <div class="nav">
-            <input type="search" class="search" id="Search">
-            <i class="fa fa-search" style="font-size:15px ;color: #F2F2F2; margin-top:10px; margin-left:5px" onclick="submit()"></i>
+            <input type="search" class="search" id="Search" placeholder="Pesquise aqui">
+            <i class="fa fa-search" style="font-size:13px ;color: #F2F2F2; margin-top:13px; margin-left:5px" onclick="submit()"></i>
         </div> <!--nav-->
 
         <div class="content-temp">
-            <div class="cont_temp">
+            <div class="cont-info-temp">
+                <div class="cont_temp">
 
-                <div class="cidade">
-                 <h1 class="nomeCidade"></h1>
+                    <div class="cidade">
+                        <h1 class="nomeCidade"></h1>
+                    </div>
+                    
+                    <div class="temp">
+                        <h1 class="temperatura"></h1>
+                    </div> <!--temp-->
+                </div> <!--cont_temp-->
+           
+
+                <div class="cont-icon">
+                    <img class="icon" src=""  alt="" style="width:100px; height:100px; margin-left:55vw;"> 
                 </div>
-                
-                <div class="temp">
-
-                    <h1 class="temperatura"></h1>
-        
-                </div> <!--temp-->
-
-
-            </div> <!--cont_temp-->
-
-            <div class="cont-icon">
-
-                <img class="icon" src=""  alt="" style="width:100px; height:100px"> 
-                
-                </div>
+            </div>
 
          
             <!--   <h1 class="descricao"></h1> -->
@@ -60,34 +58,39 @@
 
         <div class="content-hours">
             <div class="info">
-                <p class="title-info" style="display: flex; align-self: flex-start; margin-left:11vw"> Informações</p>
+                <p class="title-info" style="display: flex; align-self: flex-start; margin-left:3%;margin-top:3vh;color:#C4CAD3; font-size: 1.9vw; font-weight: bold;"> Informações</p>
                 <div class="info-1">
                 <div class=" sensacao">
                     <div class="p-div">
-                        <p class="p-sens">
+                        <img src="imgs/icons8-termômetro-48.png" style="width:2vw; height: 4vh;" alt="">
+                        <p class="p-sens"style="margin-left:1%;  font-size:1.5vw; color:#C4CAD3;">
                             Sensação
                         </p>
-                        <p class="informacoes-s">   </p>
                     </div>
+                        <p class="informacoes-s" style="margin-top:2vh; margin-left:1.9vw">   </p>
+                    
                 </div>
                     
                 <div class=" vento">
                     <div class="p-div">
-                        <p class="p-vent">
+                       <img src="imgs/icons8-vento-50.png" style="width:2vw; height: 4vh;" >
+                        <p class="p-vent" style="margin-left:1%;  font-size:1.5vw; color:#C4CAD3;">
                             Vento
                         </p>
-                        <p class="informacoes-v"></p>
                     </div>
+                        <p class="informacoes-v" style="margin-top:2vh;  margin-left:1.9vw"></p>
+                    
                 </div>
             </div>
                 <div class="info-2">
                     <div class="humidade">
                         <div class="p-div">
-                            <p class="p-humid">
+                            <img src="imgs/icons8-higrômetro-50.png"  style="width:2vw; height: 4vh;"alt="">
+                            <p class="p-humid"style="margin-left:1%; font-size:1.5vw; color:#C4CAD3;">
                                 Humidade
                             </p>
-                            <p class="informacoes-h"></p>
                         </div>
+                            <p class="informacoes-h" style="margin-top:2vh;  margin-left:1.9vw"></p>
                     </div>
                     <div class="humidade"></div>
                 </div>
@@ -95,7 +98,9 @@
             </div> <!--dia_semana-->
         </div> <!--content-hours-->
         <div class="sidebar">
-            
+            <div class="cont-sidebar">
+                <p style="color:#C4CAD3; text-align: center; font-size: 1vw ;">Parte extra</p>
+            </div>
         </div>
     </div> <!--Container-->
 
